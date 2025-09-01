@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.8">
+  <title>everything.else🛒!</title>
+
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: white;
+      color: black;
+      line-height: 1.6;
+      font-size: 16px;
+      -webkit-font-smoothing: subpixel-antialiased;
+}
+    header {
+      background: orange;
+      color: black;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 0.75rem;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-style: italic;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffeb3b;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #4a148c;
+    }
+
+    p {
+      margin-bottom: 0.75rem;
+    }
+
+    /* Buttons */
+    button { 
+     background: orangered;
+  color: white;
+  border: none;
+  font-size: 0.85rem;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  line-height: 0.4;
+  display: inline-block;
+  margin-right: 5px;
+  padding: 8px 16px;
+}
+    button:hover {
+      background: crimson;
+      transform: scale(1.09);
+    }
+
+    /* Contact List */
+    ul {
+      list-style: none;
+    }
+
+    ul li {
+      margin: 0.5rem 0;
+    }
+
+    a {
+      color: #1a237e;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background: #111;
+      color: #ffeb3b;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.85rem;
+      margin-top: 2rem;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 600px) {
+      nav {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      nav:hover {
+        background: crimson;
+      transform: scale(1.09);
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+    form{
+        background-color: rgb(54, 34, 34);
+        border-radius: 6px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        padding: 20px;
+        width: 250px;
+        color: white;
+    }
+    input[type="email"]:hover,
+    input[type="password"]:hover,
+    input[type="submit"]:hover{
+      background-color: tomato;
+      transform: scale(1.1);
+      transition: transform 0.45s ease;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>everything.else🛒!</h1>
+    <nav>
+      <a href="#become one of us">create your account</a>
+      <a href="#info">about us</a>
+      <a href="#home">home</a>
+      <a href="#store">store</a>
+      <a href="#contact">talk to us</a>
+      <a href="#more">there's even more to explore!</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="become one of us">
+      <h2>become one of us</h2>
+      
+      <form>
+        <div>
+            <input type="email" name="email" id="email" placeholder="Your Email🙂" required/>
+        </div>
+
+        <div>
+            <p>
+        <input type="password" name="password" id="password" placeholder="Strong password🗝️" required/>
+            </p>
+        </div>
+        
+        <div>
+        <input type="submit"/>
+        </div>
+      </form>
+      <p>order and purchase drips, tech stuff, stationery, interior art et cetera!</p>
+    </section>
+
+    <section id="info">
+      <h2>about us</h2>
+      <p>order and purchase stuff from your favorite stores online and it gets delivered to you whenever</p>
+    </section>
+
+    <section id="home">
+      <h2>home</h2>
+      <p>your online trolley with the excellent e~shopping experience</p>
+      <p>we are located on your mobile phone, tab, pc and other gadget that can access the Internet</p>
+
+      
+    </section>
+    
+    <section id="store">
+      <h2>your everything.else store!</h2>
+      <img src="sorroundsound.jpg" alt="premium home theater system"style="width:300px;height:200px;">
+      <br>
+      <button>
+        <p>Yamaha/ Sorround Sound</p>
+        <p><del>87000ksh</del></p>
+        <p>🛒Buy Now!
+        <p>79999ksh
+        </p>
+        </button>
+        <button>add to trolley🛒</button>
+
+      <section id="contact">
+        <h3>talk to us</h3>
+        <ul>
+        <li>Email: <a href="mailto:loccoarif44@gmail.com">loccoarif44@gmail.com</a></li>
+        <li>Phone: <a href="tel:+254768660415">+254768660415</a></li>
+        <li>Instagram: <a href="https://www.instagram.com/yourusername" target="_blank">TheCanteen🛒!</a></li>
+      </ul>
+    </section>
+
+    <section id="more">
+      <h2>there's even more to explore!</h2>
+      <p>Our other creations that we recommend👣</p>
+      <a href="track.progress.html" target="_blank">track.progress`📈</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 e.trolley🛒!.com</p>
+  </footer>
+</body>
+</html>

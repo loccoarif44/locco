@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.8">
+  <title>e`Trolley.🛒!</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      height: 100vh;
+      transition: opacity 0.8s ease; /* this is the fade */
+    }
+    body.fade-out {
+      opacity: 0;
+    }
+
+    .canteen, .everythingelse {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      transition: flex 1.9s ease;
+      cursor: pointer;
+    }
+
+    button {
+      background-color: black;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.25rem;
+      border-radius: 6px;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: orangered;
+      transform: scale(1.2);
+    }
+
+    .canteen {
+      background: linear-gradient(100deg, brown, yellow);
+    }
+    .everythingelse {
+      background: linear-gradient(100deg, black, lightgray);
+    }
+
+    /* Hover makes one side expand */
+    .canteen:hover, .everythingelse:hover {
+      background: rgb(7, 7, 163);
+      flex:1.3;
+    }
+  </style>
+</head>
+<body>
+  <!-- Food Side -->
+  <div class="canteen">
+    <h1>the.canteen🛒`🍟!</h1>
+    <p>hey! grab your favorite meals, snacks & drinks.</p>
+    <button onclick="enterPage('the.canteen🛒!.html')">Enter Canteen🥢!</button>
+  </div>
+
+  <!-- Everything Else Side -->
+  <div class="everythingelse">
+    <h1>everything.else🛒`🌎!</h1>
+    <p>do you wanna explore fashion, tech, books & other stuff.</p>
+    <button onclick="enterPage('everything.else🛒!.html')">Enter The World👣!</button>
+  </div>
+
+  <script>
+    function enterPage(url) {
+      document.body.classList.add("fade-out");
+      setTimeout(() => {
+        window.location.href = url;
+      }, 800); // same as CSS transition time
+    }
+  </script>
+</body>
+</html>
+
