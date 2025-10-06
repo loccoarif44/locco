@@ -1,2 +1,1 @@
-# locco
-web dev from scratch to pro
+Millionaire at 18. <Locked in>
